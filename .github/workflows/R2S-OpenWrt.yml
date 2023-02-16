@@ -129,6 +129,7 @@ jobs:
         cd openwrt && make -j1 V=s
     - name: Print Disk Space After
       run: df -h
+      
     - name: Organize files
       id: organize
       run: |
@@ -184,8 +185,8 @@ jobs:
         name: ${{ env.Firmware_Name }}_${{ env.REPO_BRANCH }}_bin${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
         path: openwrt/bin
 
-    - name: Organize files
-      id: organize
+    - name: Firmware files
+      id: firmware
       if: env.UPLOAD_FIRMWARE == 'true' && !cancelled()
       run: |
         cd openwrt/bin/targets/*/*
