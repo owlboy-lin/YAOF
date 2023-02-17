@@ -47,5 +47,5 @@ git clone -b master --depth 1 https://github.com/QiuSimons/openwrt-mos mosdns
 git clone -b master --depth 1 https://github.com/fw876/helloworld ssrp
 git clone -b master --depth 1 https://github.com/zxlhhyccc/bf-package-master zxlhhyccc
 #git clone -b linksys-ea6350v3-mastertrack --depth 1 https://github.com/NoTengoBattery/openwrt NoTengoBattery
-
+git clone -b master --depth 1 https://github.com/kenzok8/small-package small_pkg
 exit 0
